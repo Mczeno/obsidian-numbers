@@ -1,25 +1,25 @@
-import { defineConfig } from 'vite';
-import { svelte } from '@sveltejs/vite-plugin-svelte';
-import path from 'path';
+import { defineConfig } from "vite";
+import { svelte } from "@sveltejs/vite-plugin-svelte";
+import path from "path";
 
 export default defineConfig({
   plugins: [svelte()],
   build: {
     lib: {
-      entry: path.resolve(__dirname, 'src/main.ts'),
-      formats: ['cjs'],
-      name: 'ObsidianNumbers',
-      fileName: 'main'
+      entry: path.resolve(__dirname, "src/main.ts"),
+      formats: ["cjs"],
+      name: "ObsidianNumbers",
+      fileName: "main",
     },
     rollupOptions: {
-      external: ['obsidian'],
+      external: ["obsidian"],
       output: {
         globals: {
-          obsidian: 'obsidian'
-        }
-      }
+          obsidian: "obsidian",
+        },
+      },
     },
-    outDir: './dist',
-    emptyOutDir: false
-  }
+    outDir: "./dist",
+    emptyOutDir: false,
+  },
 });

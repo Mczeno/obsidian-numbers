@@ -1,0 +1,17 @@
+{
+  "id": "obsidian-numbers",
+  "name": "Numbers",
+  "version": "1.0.0",
+  "minAppVersion": "1.7.2",
+  "description": "Obsidian 的统计数据类展示插件",
+  "author": "Mczeno",
+  "isDesktopOnly": false,
+  "permissions": [
+    "read"
+  ],
+  "repository": "https://github.com/Mczeno/obsidian-numbers",
+  "keywords": [
+    "obsidian",
+    "plugin"
+  ]
+}
